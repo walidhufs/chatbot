@@ -1,0 +1,4 @@
+{% block %}
+    {% client %}(Do you know) (?P<query>.*){% endclient %}
+    {% response %}{% call do_you_know: %query %}{% endresponse %}
+{% endblock %}
